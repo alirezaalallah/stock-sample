@@ -29,6 +29,31 @@ Below Json represent total structure of Stock Application's response:
 `resut`: in case of success operation depends on service (get one Stock or get list of Stocks) which is used either contains one Stock or return array of Stocks.  
 `errors`: in case of error always contains list of `ApiError` Object
 
+### Example of success response (get existing Stock)
+
+```
+{
+  "status": "ACCEPTED",
+  "result": {
+    "uniqueId": 1,
+    "name": "Ali",
+    "currentPrice": 50000.00,
+    "lastUpdate": "2021-06-02T00:00:00"
+  }
+}
+```
+### Example of fail resonse 
+```
+{
+  "status": "NOT_FOUND",
+  "errors": [
+    {
+      "reason": "STOCK_NOT_FOUND",
+      "message": "Stock not found"
+    }
+  ]
+}
+```
 
 
 
