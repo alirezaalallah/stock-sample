@@ -79,7 +79,29 @@ Below json represent error object:
 ```
 ###### Possible responses:
 `ACCEPT`: Create Stock successfully.  
-`BAD_REQUEST`: Send invalid request to server
+`BAD_REQUEST`: Send invalid request to server (For example: Name of Stock which is required is aleady exist in database or Seding invalid data format,...)  
+
+### Update existing Stock
+`METHOD`: `PUT`  
+`URL`: `/api/stocks/{id}`
+
+###### Possible responses:
+`ACCEPT`: Update Stock successfully.  
+`NOT_FOUND`: Stock id which is requested does not exists in database.
+`BAD_REQUEST`: Send invalid request to server (For example: Seding invalid data format,...)  
+
+### Delete existing Stock
+`METHOD`: `DELETE`  
+`URL`: `/api/stocks/{id}`
+
+###### Possible responses:
+`ACCEPT`: DELETE Stock successfully.  
+`NOT_FOUND`: Stock id which is requested does not exists in database.
+`BAD_REQUEST`: Send invalid request to server (For example: Seding invalid data format,...)  
+
+
+
+
 
 
 
