@@ -1,5 +1,5 @@
 # Enjoy with Stock Application! :slightly_smiling_face:
-Simple REST API application to manage stocks using [Spring Boot 2.5](https://spring.io/)
+Simple REST API application to manage stocks using [Spring Boot](https://spring.io/)
 
 Below items represent services which are ready to use:
 
