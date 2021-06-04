@@ -29,6 +29,15 @@ Below Json represent total structure of Stock Application's response:
 `resut`: in case of success operation depends on service (get one Stock or get list of Stocks) which is used either contains one Stock or return array of Stocks.  
 `errors`: in case of error always contains list of `ApiError` Object
 
+### ApiError format
+Below json represent error object:
+```
+{
+  "reason": "INVALID_VALUE",
+  "message": "Stock id should be digit",
+  "param": "id"
+}
+```
 ### Example of success response (get existing Stock)
 
 ```
