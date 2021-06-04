@@ -38,7 +38,7 @@ Below json represent error object:
   "param": "id"
 }
 ```
-### Example of success response (get existing Stock)
+### Example of success response (Get existing Stock)
 
 ```
 {
@@ -64,6 +64,11 @@ Below json represent error object:
 }
 ```
 
+## List Of REST API which are available:
+
+### Create new Stock
+`METHOD`: `POST`
+`URL`: `/api/stocks`
 
 
 
