@@ -67,8 +67,19 @@ Below json represent error object:
 ## List Of REST API which are available:
 
 ### Create new Stock
-`METHOD`: `POST`
+`METHOD`: `POST`  
 `URL`: `/api/stocks`
+
+###### Request body sample:  
+```
+{
+  "name": "Adrian",
+  "price": 90000
+}
+```
+###### Possible responses:
+`ACCEPT`: Create Stock successfully.  
+`BAD_REQUEST`: Send invalid request to server
 
 
 
