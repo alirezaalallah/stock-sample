@@ -81,9 +81,13 @@ public class ApiResponseDto implements Serializable {
             return this;
         }
 
-
         public Builder ok() {
             apiResponseDto.status = HttpStatus.ACCEPTED;
+            return this;
+        }
+
+        public Builder notFound() {
+            apiResponseDto.status = HttpStatus.NOT_FOUND;
             return this;
         }
 

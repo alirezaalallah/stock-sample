@@ -71,7 +71,7 @@ public class StockControllerTest {
     public void givenNotExistsStockIdToFindById_thenGetStockNotFoundError() throws Exception {
         String notExistsStockId = "20";
         ApiErrorDto expectedError = ApiErrorDto.builder().reason(Reason.STOCK_NOT_FOUND).message("Stock not found").build();
-        ApiResponseDto expectedResponse = ApiResponseDto.builder().errors(expectedError).badRequest().build();
+        ApiResponseDto expectedResponse = ApiResponseDto.builder().errors(expectedError).notFound().build();
 
         mvc.perform(get(GET_ONE_STOCK_URL, notExistsStockId)
                 .contentType(MediaType.APPLICATION_JSON))

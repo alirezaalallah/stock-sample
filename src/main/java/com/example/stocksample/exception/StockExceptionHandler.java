@@ -41,18 +41,18 @@ public class StockExceptionHandler extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler(StockNotFoundException.class)
-    public final ResponseEntity<Object> handleUserNotFoundException(StockNotFoundException ex, WebRequest request) {
+    public final ResponseEntity<Object> handleStockNotFoundException(StockNotFoundException ex, WebRequest request) {
         Reason reason = Reason.STOCK_NOT_FOUND;
         ApiErrorDto error = ApiErrorDto.builder()
                 .reason(reason)
                 .message(ex.getMessage())
                 .build();
-        ApiResponseDto response = ApiResponseDto.builder().errors(error).badRequest().build();
+        ApiResponseDto response = ApiResponseDto.builder().errors(error).notFound().build();
         return ResponseEntity.badRequest().body(response);
     }
 
     @ExceptionHandler(StockAlreadyExistsException.class)
-    public final ResponseEntity<Object> handleUserNotFoundException(StockAlreadyExistsException ex, WebRequest request) {
+    public final ResponseEntity<Object> handleStockAlreadyExistsException(StockAlreadyExistsException ex, WebRequest request) {
         Reason reason = Reason.STOCK_ALREADY_IS_EXISTS;
         ApiErrorDto error = ApiErrorDto.builder()
                 .reason(reason)
