@@ -100,6 +100,27 @@ Below json represent error object:
 `BAD_REQUEST`: Send invalid request to server (For example: Seding invalid data format,...)  
 
 
+### Get specific Stock
+`METHOD`: `GET`  
+`URL`: `/api/stocks/{id}`
+
+###### Possible responses:
+`ACCEPT`: Get Stock object under `ApiResponse` format successfully.  
+`NOT_FOUND`: Stock id which is requested does not exists in database.
+`BAD_REQUEST`: Send invalid request to server (For example: Seding invalid data format,...)  
+
+
+### Get list of all Stocks
+`METHOD`: `GET`  
+`URL`: `/api/stocks`
+
+###### Possible responses:
+`ACCEPT`: Get list of Stock objects under `ApiResponse` format successfully (Could be empty list if there are no Stocks exists in database). 
+`BAD_REQUEST`: Reject request by server for some reason.
+
+
+
+
 
 
 
