@@ -25,7 +25,7 @@ Below Json represent total structure of Stock Application's response:
   "errors": array(ApiError)
 }
 ```
-`status`: status of the operation such as (`OK`,`NOT_FOUND`,`BAD_REQUEST`,`....`)  
+`status`: status of the operation such as (`ACCEPT`,`NOT_FOUND`,`BAD_REQUEST`,`....`)  
 `resut`: in case of success operation depends on service (get one Stock or get list of Stocks) which is used either contains one Stock or return array of Stocks.  
 `errors`: in case of error always contains list of `ApiError` Object
 
