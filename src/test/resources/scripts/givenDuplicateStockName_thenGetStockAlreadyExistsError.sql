@@ -1,0 +1,1 @@
+INSERT INTO stock(unique_Id, name, current_price, last_updated) values (0,'Adrian',10000,today);

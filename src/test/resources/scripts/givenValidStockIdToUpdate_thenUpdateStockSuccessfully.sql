@@ -1,0 +1,1 @@
+INSERT INTO stock(unique_Id, name, current_price, last_updated) values (10,'kafka',50000,today);
