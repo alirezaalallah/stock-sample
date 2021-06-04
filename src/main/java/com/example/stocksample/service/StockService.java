@@ -47,6 +47,7 @@ public class StockService {
                     Optional.ofNullable(request.getName()).ifPresent(stock::setName);
                     Optional.ofNullable(request.getPrice()).ifPresent(stock::setCurrentPrice);
 
+                    stockRepository.save(stock);
                     return ApiResponseDto.builder().ok().build();
                 }
         ).orElseThrow(StockNotFoundException::new);
