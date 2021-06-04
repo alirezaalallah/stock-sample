@@ -1,4 +1,4 @@
-# Enjoy with Stock Application! :slightly_smiling_face:
+# Enjoy with Stock Sample Application! :slightly_smiling_face:
 Simple REST API application to manage stocks using [Spring Boot](https://spring.io/)
 
 Below items represent services which are ready to use:
